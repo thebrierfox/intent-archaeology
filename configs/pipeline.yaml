@@ -1,0 +1,14 @@
+ingest:
+  batch_size: 100
+  pii_scrub: true
+  mode: delta
+analyze:
+  error_keywords:
+    - error
+    - exception
+    - traceback
+    - fail
+    - refused
+  time_window_days: 30
+report:
+  template: report.md.j2
