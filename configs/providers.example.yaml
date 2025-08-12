@@ -1,0 +1,9 @@
+openai:
+  api_key: YOUR_OPENAI_API_KEY
+  embeddings:
+    model: text-embedding-3-large
+  completion:
+    model: gpt-5
+    max_tokens: 4096
+    temperature: 0.2
+cost_cap_usd: 10.0
