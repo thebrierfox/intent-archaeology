@@ -1,0 +1,19 @@
+# Intent Archaeology Analysis Report
+
+## Summary
+Analysis run at {{ run_time }} with {{ num_conversations }} conversations processed.
+
+## Projects
+{% for project in projects %}
+### {{ project.title }}
+- **Conversations:** {{ project.conversation_ids | join(", ") }}
+- **Overview:** {{ project.summary }}
+
+{% endfor %}
+
+## Ghost Problems
+{% for ghost in ghosts %}
+### Ghost {{ loop.index }}: {{ ghost.description }}
+- **Conversation ID:** {{ ghost.conversation_id }}
+- **Reason:** {{ ghost.reason }}
+{% endfor %}
