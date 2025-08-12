@@ -1,0 +1,33 @@
+[
+  {
+    "id": "conv1",
+    "title": "Sample conversation",
+    "create_time": 0,
+    "update_time": 0,
+    "current_node": "node1",
+    "mapping": {
+      "node1": {
+        "id": "node1",
+        "parent": null,
+        "children": ["node2"],
+        "message": {
+          "id": "msg1",
+          "author": {"role": "user"},
+          "content": {"content_type": "text", "parts": ["Hello AI"]}
+        },
+        "metadata": {"model_slug": "gpt-3.5"}
+      },
+      "node2": {
+        "id": "node2",
+        "parent": "node1",
+        "children": [],
+        "message": {
+          "id": "msg2",
+          "author": {"role": "assistant"},
+          "content": {"content_type": "text", "parts": ["Hi there!"]}
+        },
+        "metadata": {"model_slug": "gpt-3.5"}
+      }
+    }
+  }
+]
