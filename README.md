@@ -35,4 +35,11 @@ python -m ia.cli analyze --db data/ia.db --out data/findings.json
 python -m ia.cli report --db data/ia.db --findings data/findings.json --out artefacts/report.md
 ```
 
-See `configs/pipeline.yaml` for tunable parameters such as PII scrubbing and batch sizes.  You may copy `configs/providers.example.yaml` to `configs/providers.yaml` and fill in API keys to enable embedding and LLM‑powered clustering.
+See `configs/pipeline.yaml` for tunable pa
+
+rameters such as PII scrubbing and batch sizes.  You may copy `configs/providers.example.yaml` to `configs/providers.yaml` and fill in API keys to enable embedding and LLM‑powered clustering.
+
+
+## License and ownership
+
+All code and documentation in this repository are the intellectual property of **IntuiTek¹** (William Kyle Million). Unauthorized copying, modification, distribution or use is prohibited without prior written consent. See the `LICENSE` file for details. For licensing inquiries, contact kyle@intuitek.ai.
